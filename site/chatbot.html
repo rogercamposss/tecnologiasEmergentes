@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="chatbot">
+        <div class="chatbot-header">
+            <h4>Assistente Virtual</h4>
+            <button id="chatbot-toggle" class="toggle-btn">_</button>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Mensagens irão aparecer aqui -->
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Digite sua mensagem...">
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotBody = document.querySelector('.chatbot-body');
+        const sendBtn = document.getElementById('send-btn');
+        const inputField = document.getElementById('chatbot-input');
+        const messagesContainer = document.getElementById('chatbot-messages');
+
+        chatbotToggle.addEventListener('click', () => {
+            chatbotBody.classList.toggle('collapsed');
+            chatbotToggle.textContent = chatbotBody.classList.contains('collapsed') ? '^' : '_';
+        });
+
+        sendBtn.addEventListener('click', () => {
+            const userMessage = inputField.value.trim();
+            if (userMessage) {
+                addMessage(userMessage, 'user');
+                inputField.value = '';
+
+                // Resposta automática do chatbot (para simulação)
+                setTimeout(() => {
+                    addMessage('Esta é uma resposta do chatbot!', 'bot');
+                }, 500);
+            }
+        });
+
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            messageDiv.textContent = text;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>

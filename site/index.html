@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nom - Boston's Chillest Gastropub</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/screen.css">
+  </head>
+  <body>
+    <header id="topId">
+      
+      <nav>
+        <div class="container" >
+          <a class="active" onclick="rolar('topId');">Home</a>
+          <a onclick="rolar('menuId');">Menu</a>
+          <a onclick="rolar('sobreId');">Quem SOMOS?</a>
+          <a onclick="rolar('eventosId');">Eventos</a>
+        </div>
+      </nav>
+      <h1><a href="."><img src="img/logo.png" alt="Nom"></a></h1>
+    </header>
+    <!-- SOBRE -->
+    <section>
+      <div class="container" id="sobreId">
+
+        <div class="col">
+          <h2>QUEM SOMOS?</h2>
+          <p>O restaurante "Rejanes 7" foi fundado em 2024 por Fernanda Rejanes, uma jovem de 24 anos apaixonada pela culinária italiana. Desde pequena, Fernanda nutria uma grande admiração pelos sabores autênticos da Itália, o que a levou a se especializar em gastronomia italiana. Determinada a compartilhar seu amor pela comida italiana com o mundo, ela abriu o "Rejanes 7", um restaurante dedicado exclusivamente a pratos italianos. Com uma visão clara e um paladar refinado, Fernanda queria que todos experimentassem a riqueza das massas e a autenticidade da culinária italiana. Seu restaurante rapidamente se tornou um ponto de referência para os amantes da boa mesa, destacando-se pela qualidade e tradição em cada prato servido.</p>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span data-picture>
+                <span data-src="img/outside-small.jpg"></span>
+                <span data-src="img/outside.jpg" data-media="(min-width: 600px)"></span>
+                <noscript>
+                  <img src="img/outside-small.jpg">
+                </noscript>
+              </span>
+            </div>
+
+            <div class="swiper-slide">
+              <span data-picture>
+                <span data-src="img/burger-small.jpg"></span>
+                <span data-src="img/burger.jpg" data-media="(min-width: 600px)"></span>
+                <noscript>
+                  <img src="img/burger-small.jpg">
+                </noscript>
+              </span>
+            </div>
+
+            <div class="swiper-slide">
+              <span data-picture>
+                <span data-src="img/drinks-small.jpg"></span>
+                <span data-src="img/drinks.jpg" data-media="(min-width: 600px)"></span>
+                <noscript>
+                  <img src="img/drinks-small.jpg">
+                </noscript>
+              </span>
+            </div>
+
+            <div class="swiper-slide">
+              <span data-picture>
+                <span data-src="img/potpie-small.jpg"></span>
+                <span data-src="img/potpie.jpg" data-media="(min-width: 600px)"></span>
+                <noscript>
+                  <img src="img/potpie-small.jpg">
+                </noscript>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-pagination"></div>
+
+        <div class="clear">
+          <div class="col col-50">
+            <blockquote>"Why is this food so good. Why. Someone please help me."</blockquote>
+            -Eccentric Celebrity Chef
+          </div>
+          <div class="col col-50">
+            <blockquote>"Best drinks in the neighborhood by far."</blockquote>
+            -Silly Local Magazine
+          </div>
+        </div>
+
+
+        <div class="col center">
+
+          <div class="link-list">
+            <a href="#">Facebook Page</a> <a href="#">Twitter Page</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <link rel="stylesheet" href="lib/idangerous.swiper.css">
+    <script defer src="lib/idangerous.swiper-2.4.min.js"></script>
+    <script src="lib/picturefill.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var mySwiper = new Swiper('.swiper-container',{
+          mode:'horizontal',
+          loop: true,
+          paginationClickable: true,
+          pagination: '.my-pagination',
+          calculateHeight: true
+        });
+      });
+    </script>
+
+
+    <!-- MENU -->
+    <section>
+      <div class="container" id="menuId">
+
+        <div class="clear">
+          <div class="col col-50">
+
+            <div class="col menu-info">
+              <h2>Food &amp; Drink</h2>
+              <p>Kitchen is open every day until midnight.</p>
+            </div>
+
+            <div class="col">
+              <h3>Pot Pies of the Day</h3>
+              <dl>
+                <dt>Lamb Stew Pot Pie $10</dt>
+                <dd>With turnips, potatos, and pearl onions.</dd>
+                <dt>Lobster Pot Pie $15</dt>
+                <dd>With carrots and peas.</dd>
+              </dl>
+            </div>
+
+          </div>
+
+          <div class="col col-50">
+
+            <a href="why-nom.html">
+              <span data-picture data-alt="We're famous for our pot pie">
+                <span data-src="img/potpie-small.jpg"></span>
+                <span data-src="img/potpie.jpg" data-media="(min-width: 600px)"></span>
+                <noscript>
+                    <img src="img/potpie-small.jpg">
+                </noscript>
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col">
+
+          <h3>Brunch (Every Sunday 10am - 4pm)</h3>
+
+          <dl>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+          </dl>
+
+          <h3>Lunch &amp; Dinner</h3>
+
+          <dl>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+          </dl>
+
+          <h3>Cocktails</h3>
+
+          <dl>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+          </dl>
+
+          <h3>Draft List (Updated Weekly)</h3>
+
+          <dl>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+            <dt>Delicious Menu Item $8</dt>
+            <dd>With sumptuous adjectives, sides, and optional substitutions.</dd>
+          </dl>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATOS -->
+    <section>
+      <div class="container" id="contatoId">
+
+        <div class="col">
+          <h2>Business Contact Info</h2>
+
+          <h3>Marketing / Advertising</h3>
+          <p>Email <a href="#">mike@example.com</a></p>
+
+          <h3>Product Sales</h3>
+          <p>Email <a href="#">greg@example.com</a></p>
+
+          <h3>Fax</h3>
+          <p>617-697-2052</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EVENTOS -->
+    <section>
+      <div class="container" id="eventosId">
+
+        <div class="col">
+          <h2>Events</h2>
+          <h3>Upcoming Events</h3>
+        </div>
+
+        <div class="clear">
+          <div class="col col-40">
+            <span data-picture data-alt="Looper">
+              <span data-src="img/looper-small.jpg"></span>
+              <span data-src="img/looper.jpg" data-media="(min-width: 600px)"></span>
+
+              <noscript>
+                  <img src="img/looper-small.jpg">
+              </noscript>
+            </span>
+          </div>
+          <div class="col col-60">
+            <h4>Movie Night</h4>
+            <h5>Friday, January 3rd at 9pm</h5>
+            <p>We're showing <cite>Looper</cite>. Free snacks until we run out.</p>
+          </div>
+        </div>
+
+        <div class="col">
+
+          <h3>Book a Private Event</h3>
+
+          <p>To book a private event, email us at <a href="#">events@example.com</a> or call us at <a href="tel:617-697-2052">617-697-2052</a>.</p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="phone" class="col col-50">
+          <a id="phone-number" href="tel:1-617-6975-2052">617-697-2052</a>
+          <p>
+            Call for reservations!<br>
+            (parties of 4 or more only)
+          </p>
+        </div>
+        <div class="col col-50">
+          <p id="address">
+            <a href="https://www.google.com/maps/preview#!q=Commonwealth+Ave+and+harvard+ave.&data=!1m4!1m3!1d2388!2d-71.133041!3d42.3502619!4m15!2m14!1m13!1s0x89e379c676f75f57%3A0x9e301f01b1d6e581!3m8!1m3!1d76425!2d-71.1956237!3d42.3448091!3m2!1i832!2i622!4f13.1!4m2!3d42.3503491!4d-71.1309918">
+              12345 Boston Street<br>
+              Boston, MA 02134
+            </a>
+          </p>
+          <p>Driving: Take Exit 123 off the Mass Pike</p>
+          <p>MBTA: Boston Ave. Stop on the Green Line</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="col col-50">
+          <div id="hours"></div>
+        </div>
+        <div class="col col-50 no-padding">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.3135589586905!2d-71.13123156481349!3d42.35047270168209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379c5d6b8a8e1%3A0xa424e9433f00c327!2s1229+Commonwealth+Ave%2C+Boston%2C+MA+02134!5e0!3m2!1sen!2sus!4v1389031351889" width="320" height="220" frameborder="0" style="border:0"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--CHAT BOT-->
+    <div class="chatbot">
+      <div class="chatbot-header">
+          <h4>Assistente Virtual</h4>
+          <button id="chatbot-toggle" class="toggle-btn">_</button>
+      </div>
+      <div class="chatbot-body">
+          <div class="chatbot-messages" id="chatbot-messages">
+              <!-- Mensagens irão aparecer aqui -->
+          </div>
+          <div class="chatbot-input">
+              <input type="text" id="chatbot-input" placeholder="Digite sua mensagem...">
+              <button id="send-btn">Enviar</button>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      const chatbotToggle = document.getElementById('chatbot-toggle');
+      const chatbotBody = document.querySelector('.chatbot-body');
+      const sendBtn = document.getElementById('send-btn');
+      const inputField = document.getElementById('chatbot-input');
+      const messagesContainer = document.getElementById('chatbot-messages');
+
+      chatbotToggle.addEventListener('click', () => {
+          chatbotBody.classList.toggle('collapsed');
+          chatbotToggle.textContent = chatbotBody.classList.contains('collapsed') ? '^' : '_';
+      });
+
+      sendBtn.addEventListener('click', () => {
+          const userMessage = inputField.value.trim();
+          if (userMessage) {
+              addMessage(userMessage, 'user');
+              inputField.value = '';
+
+              // Resposta automática do chatbot (para simulação)
+              setTimeout(() => {
+                  addMessage('Esta é uma resposta do chatbot!', 'bot');
+              }, 500);
+          }
+      });
+
+      function addMessage(text, sender) {
+          const messageDiv = document.createElement('div');
+          messageDiv.classList.add('message', sender);
+          messageDiv.textContent = text;
+          messagesContainer.appendChild(messageDiv);
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      }
+  </script>
+    <footer>
+      <a href="http://www.flickr.com/photos/60944931@N00/4659211175/in/photolist-86HFaa-7RQG5V">Image Credit</a>
+      <a href="business.html">Business Contact Info</a>
+    </footer>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/moment-timezone.min.js"></script>
+    <script src="lib/hours.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
